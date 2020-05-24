@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h4>{{ message }}</h4>
     <v-app id="inspire">
       <v-treeview selectable color="warning" :items="items"></v-treeview>
     </v-app>
@@ -8,7 +7,7 @@
 </template>
 
 <script>
-// vuetifyやcssは,、index.tsではなく、ここでimportしないとバンドルされない。
+// vuetifyやcssは,、index.tsではなく、ここでimportしないと正しく適用されない模様。
 // "vuetify"ではなく"vuetify/lib"にしないと、デザインが微妙に異なる
 import Vuetify from "vuetify/lib";
 import "material-design-icons-iconfont/dist/material-design-icons.css";
